@@ -1,26 +1,59 @@
 .artist-img {
-  width: 150px;
-  height: 150px;
-  background:;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 5px;
   background-size: cover;
 }
 
+.music-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.artist-name {
+  color: #818388;
+}
+
 .music-container {
-  width: 400px;
-  height: 400px;
-  position: absolute;
+  width: 300px;
+  height: 280px;
+  position: relative;
 }
 
 .music-content {
+  padding: 7px;
+  max-width: 400px;
   background: #222222;
   color: #fff;
   position: absolute;
   width: 100%;
   bottom: 0;
+  z-index: 3;
 }
 
 .cover-img {
   width: 200px;
   height: 200px;
   background-size: cover;
+}
+
+.music-listen-count{
+  color: #748085;
+}
+
+.music-tag{
+  float: right;
+}
+
+.overlay{
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
 }

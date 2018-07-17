@@ -6,13 +6,21 @@ class MusicCard extends React.PureComponent {
   render() {
     const { title, tag, profilePic, listenCount, artist, cover_img } = this.props;
     return (
-      <div style={{ backgroundImage: `url(${cover_img})` }} className={'music-container'}>
-        <div>{listenCount}</div>
-        <div>{tag}</div>
-        <div className={'music-content'}>
-          <div>{title}</div>
-          <img src={profilePic} className={'artist-img'} />
-          <div>{artist}</div>
+      <div className={'overlay'}>
+        <div style={{ backgroundImage: `url(${cover_img})` }} className={'music-container'}>
+          <div className={'music-listen-count'}>{listenCount}</div>
+          <div className={'music-tag'}>{tag}</div>
+          <div className={'container music-content'}>
+            <div className={'row'}>
+              <div className={'col-3'}>
+                <img className={'artist-img'} src={profilePic} />
+              </div>
+              <div className={'col-9'}>
+                <span className={'music-title'}>{title}</span>
+                <div className={'artist-name'}>{artist}</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
