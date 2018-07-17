@@ -1,4 +1,26 @@
-.artist-img{
-  width: 300px;
-  height: 300px;
+.artist-img {
+  width: 150px;
+  height: 150px;
+  background:;
+  background-size: cover;
+}
+
+.music-container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+}
+
+.music-content {
+  background: #222222;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.cover-img {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
 }
